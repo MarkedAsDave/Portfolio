@@ -1,0 +1,52 @@
+.project-container {
+    width: 90vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+  }
+.project-container p{
+  font-weight: bold;
+  visibility: hidden;
+  width: 95vw;
+}
+
+.text-h2.light-mode{
+  color: black;
+}
+.text-h2.dark-mode{
+  color: #8435C2;
+}
+.skill-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+.project-content{
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  margin-top: -10vh;
+  width: 32vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 2%;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+
+
+
+ 

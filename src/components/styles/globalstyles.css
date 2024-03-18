@@ -4,28 +4,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    overflow-x: hidden;
+}
 
-  
 .container {
-    height: 100vh;
+    position: relative;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width: 98.7vw;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .container {
     background-color: #ffffff; /* Default light mode background color */
     color: #333333; /* Default light mode text color */
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
-/* Dark mode styles */
 .container.dark-mode {
     background-color: #333333;
     color: #ffffff;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
+
+.container.dark-mode h2 {
+   color: #8435C2;
+}
+
+
 
 .container.dark-mode button{
     background-color: 8435C2;
@@ -33,38 +42,42 @@
 }
 
 .header{
-    width: 100%;
-    position: absolute;
+    width: 95%;
+    position: fixed; /* Changed from absolute to fixed */
     top: 0;
     background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 7%;
+    height: 6%;
     justify-content: center;
 }
+
 
 .header-btn-container{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 95%;
     justify-content: center;
     gap: 4%;
+
 }
 
 button.light-mode{
     background-color: transparent;
     color: black;
-    border: none;
+    border: 0;
 }
 
-button.light-mode:active{
-    outline: none;
+button.light-mode:focus{
+    outline: 0;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 5px solid #8435C2;
+    border-bottom: 2px solid #8435C2;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 
@@ -73,27 +86,31 @@ button.dark-mode {
     color: white;
 }
 
-button.dark-mode:active{
-    outline: none;
+button.dark-mode:focus{
+    outline: 0;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 5px solid #8435C2;
+    border-bottom: 2px solid #8435C2;
+    border-radius: 0;
+    background-color: transparent;
 }
+
 
 .user{
     font-weight: bold;
     margin-left: 1%;
+    height: fit-content;
 }
 
 .switch-btn{
     position: relative;
     display: flex;
     align-self: flex;
-    margin-left: auto;
-
+    
 }
+
 
 
 @media (max-width: 768px) {

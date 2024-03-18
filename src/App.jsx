@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Home from "./components/home/home";
 import "./components/styles/globalstyles.css";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import Projcets from "./components/projects/projects";
 
-// Define the MaterialUISwitch component with custom styles
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
@@ -55,9 +55,19 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const projectsRef = useRef(null); // Ref for the Projects component
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+  };
+
+  const scrollToProjects = () => {
+    if (projectsRef.current) {
+      // Scroll to projects after a short delay
+      setTimeout(() => {
+        projectsRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
   };
 
   return (
@@ -68,10 +78,24 @@ function App() {
             <p>MarkedAsDave</p>
           </div>
           <div className="header-btn-container">
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>Home</button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>PROJECTS</button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>ABOUT</button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>CONTACT</button>
+            <button
+              className={isDarkMode ? "dark-mode" : "light-mode"}
+              onClick={() => window.scrollTo(0, 0)} // Scroll to top for HOME
+            >
+              HOME
+            </button>
+            <button
+              className={isDarkMode ? "dark-mode" : "light-mode"}
+              onClick={scrollToProjects} // Scroll to Projects component
+            >
+              PROJECTS
+            </button>
+            <button className={isDarkMode ? "dark-mode" : "light-mode"}>
+              ABOUT
+            </button>
+            <button className={isDarkMode ? "dark-mode" : "light-mode"}>
+              CONTACT
+            </button>
           </div>
           <div className="switch-btn">
             <FormControlLabel
@@ -87,6 +111,9 @@ function App() {
           </div>
         </div>
         <Home />
+        <div ref={projectsRef}>
+          <Projcets isDarkMode={isDarkMode} />
+        </div>
       </div>
     </>
   );
