@@ -27,6 +27,7 @@ export default function Projects({ isDarkMode }) {
                 photo={CDO}
                 logo={Figma}
                 buttonText="View Design"
+                buttonLink={""}
                 isDarkMode={isDarkMode} // Pass isDarkMode to Card component
               />
               <Card

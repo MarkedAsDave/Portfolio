@@ -80,6 +80,17 @@ button.light-mode:focus{
     background-color: transparent;
 }
 
+button.light-mode:hover{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #8435C2;
+    border-radius: 0;
+    background-color: transparent;
+}
+
 
 button.dark-mode {
     background-color: transparent; 
@@ -97,6 +108,16 @@ button.dark-mode:focus{
     background-color: transparent;
 }
 
+button.dark-mode:hover{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #8435C2;
+    border-radius: 0;
+    background-color: transparent;
+}
 
 .user{
     font-weight: bold;

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./home.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import "../styles/globalstyles.css";
 
-export default function Home() {
+export default function Home({isDarkMode}) {
   const handleDownloadCV = () => {
     // Path to your CV PDF file
     const cvPath = "../cv/cv.pdf";
@@ -37,7 +38,7 @@ export default function Home() {
               digital vision to life!
             </p>
             <div className="content-btn">
-              <button className="btn-get">GET IN TOUCH</button>
+              <button className={`btn-get ${isDarkMode ? "dark-mode" : "light-mode"}`}>GET IN TOUCH</button>
               <button className="btn-cv" onClick={handleDownloadCV}>
                 Download CV
                 <CloudDownloadIcon fontSize="small" />

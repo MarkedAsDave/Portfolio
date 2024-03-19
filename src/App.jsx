@@ -5,6 +5,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import Projcets from "./components/projects/projects";
+import About from "./components/about/about";
+import Contact from "./components/contact/contact";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -56,10 +58,13 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const projectsRef = useRef(null); // Ref for the Projects component
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
+
 
   const scrollToProjects = () => {
     if (projectsRef.current) {
@@ -69,6 +74,22 @@ function App() {
       }, 100);
     }
   };
+
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      setTimeout(() => {
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
+
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      setTimeout(() => {
+        contactRef.current.scrollIntoView({behavior: "smooth"});
+      }, 100)
+    }
+  }
 
   return (
     <>
@@ -90,10 +111,15 @@ function App() {
             >
               PROJECTS
             </button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>
+            <button
+              className={isDarkMode ? "dark-mode" : "light-mode"}
+              onClick={scrollToAbout}
+            >
               ABOUT
             </button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}>
+            <button className={isDarkMode ? "dark-mode" : "light-mode"}
+              onClick={scrollToContact}
+            >    
               CONTACT
             </button>
           </div>
@@ -110,9 +136,15 @@ function App() {
             />
           </div>
         </div>
-        <Home />
+        <Home isDarkMode={isDarkMode}/>
         <div ref={projectsRef}>
           <Projcets isDarkMode={isDarkMode} />
+        </div>
+        <div ref={aboutRef}>
+          <About isDarkMode={isDarkMode}/>
+        </div>
+        <div ref={contactRef}> 
+          <Contact/>
         </div>
       </div>
     </>

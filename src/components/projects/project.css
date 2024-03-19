@@ -1,6 +1,6 @@
 .project-container {
     width: 90vw;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
   color: black;
 }
 .text-h2.dark-mode{
-  color: #8435C2;
+  color: rgb(184, 169, 204);
 }
 .skill-container{
   position: relative;
