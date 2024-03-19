@@ -66,6 +66,24 @@
 .circle.dark-mode{
     width: 15px;
     height: 15px;
-    background-color: rgb(184, 169, 204);
+    background-color: #a04ddf;
     border-radius: 100%;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.image-container img{
+    width: 3rem;
+    height: 3rem;
 }

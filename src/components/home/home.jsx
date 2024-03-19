@@ -39,7 +39,7 @@ export default function Home({isDarkMode, }) {
               digital vision to life!
             </p>
             <div className="content-btn">
-              <button className="btn-cv">GET IN TOUCH</button>
+              <button className={`btn-cv ${isDarkMode ? "dark-mode" : "light-mode"}`}>GET IN TOUCH</button>
               {/* <button className="btn-cv" onClick={handleDownloadCV}>
                 Download CV
                 <CloudDownloadIcon fontSize="small" />

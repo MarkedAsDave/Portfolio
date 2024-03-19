@@ -1,5 +1,11 @@
 import "./about.css";
-import PS from "../img/PS.png";
+import PS from "../img/photoshop.png";
+import Corel from "../img/corel.png"
+import Fil from "../img/filmora.png";
+import Python from "../img/Python.png";
+import react from "../img/react.png";
+import JS from "../img/JS.png";
+import fig from "../img/fig.png"
 
 export default function About({isDarkMode}) {
   return (
@@ -10,10 +16,20 @@ export default function About({isDarkMode}) {
           <div className="grid-left">
             <div className="left-content">
               <p>Senior High School: ICT - Visual Graphic Design</p>
-              {/* <img src={PS} alt="PS Logo" /> */}
+              <div className="image-container">
+              <img src={PS} alt="PS Logo" />
+              <img src={Corel} alt="PS Logo" />
+              <img src={Fil} alt="PS Logo" />
+              </div>
             </div>
             <div className="left-content">
               <p>Bachelor of Science in Information Technology</p>
+              <div className="image-container">
+              <img src={Python} alt="PS Logo" />
+              <img src={JS} alt="PS Logo" />
+              <img src={react} alt="PS Logo" />
+              <img src={fig} alt="PS Logo" />
+              </div>
             </div>
           </div>
           <div className="grid-center">
@@ -27,7 +43,6 @@ export default function About({isDarkMode}) {
                 (CCIT), focusing on ICT - Visual Graphic Design during Senior
                 High School, igniting my passion for digital arts.
               </p>
-              {/* <img src={PS} alt="PS Logo" /> */}
             </div>
             <div className="left-right">
               <p>

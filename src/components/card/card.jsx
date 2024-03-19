@@ -10,7 +10,7 @@ export default function Card({ title, photo, logo, buttonText, buttonLink, isDar
         <div className="title-button">
           <h4 className={`title ${isDarkMode ? "dark-mode" : "light-mode"}`}>{title}</h4>
           <a href={buttonLink} target="_blank" rel="noopener noreferrer">
-            <button className="button">{buttonText}</button>
+            <button className={`button ${isDarkMode ? "dark-mode" : ""}`}>{buttonText}</button>
           </a>
         </div>
         <div className="logo-container">

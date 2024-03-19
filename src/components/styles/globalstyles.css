@@ -31,7 +31,7 @@
 }
 
 .container.dark-mode h2 {
-   color: rgb(184, 169, 204);
+   color: #a04ddf;
 }
 
 
@@ -42,7 +42,7 @@
 }
 
 .header{
-    width: 100%;
+    width: 98%;
     position: fixed; /* Changed from absolute to fixed */
     top: 0;
     display: flex;
@@ -58,7 +58,7 @@
     transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
-.headr.light-mode{
+.header.light-mode{
     background-color: white;
     transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
@@ -67,9 +67,9 @@
 .header-btn-container{
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 75%;
     justify-content: center;
-    gap: 4%;
+    gap: 1%;
 
 }
 
