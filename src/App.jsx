@@ -94,7 +94,7 @@ function App() {
   return (
     <>
       <div className={`container ${isDarkMode ? "dark-mode" : "light"}`}>
-        <div className="header">
+        <div className={`header ${isDarkMode ? "dark-mode" : "light-mode"}`}>
           <div className="user">
             <p>MarkedAsDave</p>
           </div>
@@ -136,7 +136,7 @@ function App() {
             />
           </div>
         </div>
-        <Home isDarkMode={isDarkMode}/>
+        <Home isDarkMode={isDarkMode} />
         <div ref={projectsRef}>
           <Projcets isDarkMode={isDarkMode} />
         </div>

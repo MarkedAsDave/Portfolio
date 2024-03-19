@@ -42,15 +42,25 @@
 }
 
 .header{
-    width: 95%;
+    width: 100%;
     position: fixed; /* Changed from absolute to fixed */
     top: 0;
-    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 6%;
     justify-content: center;
+    z-index: 999;
+}
+
+.header.dark-mode{
+    background-color: #333333;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.headr.light-mode{
+    background-color: white;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 
@@ -121,7 +131,7 @@ button.dark-mode:hover{
 
 .user{
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 2%;
     height: fit-content;
 }
 

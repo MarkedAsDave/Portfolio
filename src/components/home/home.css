@@ -66,26 +66,7 @@
     outline: 0;
 }
 
-.btn-get{
-    width: auto;
-    height: 2rem;
-    align-content: center;
-    font-size: 0.7rem;
-}
 
-.btn-get:focus{
-    outline: 0;
-}
-
-.btn-get.light-mode{
-  background-color: black;
-  color: white;
-}
-
-.btn-get.dark-mode{
-  background-color: rgb(184, 169, 204);
-  color: black;
-}
 .right {
   display: flex;
   flex-direction: column;
