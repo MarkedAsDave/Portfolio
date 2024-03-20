@@ -31,7 +31,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
   },
   "& .MuiSwitch-thumb": {
-    backgroundColor: theme.palette.mode === "dark" ? "#003892" : "#8435C2",
+    backgroundColor: theme.palette.mode === "dark" ? "#003892" : "#8435C2;",
     width: 32,
     height: 32,
     "&::before": {
@@ -144,7 +144,7 @@ function App() {
           <About isDarkMode={isDarkMode}/>
         </div>
         <div ref={contactRef}> 
-          <Contact/>
+          <Contact isDarkMode={isDarkMode}/>
         </div>
       </div>
     </>
