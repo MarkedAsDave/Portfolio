@@ -6,7 +6,7 @@ export default function Invitation({ onClose, isDarkMode }) {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-container" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-header">
-                    <h3>Invitations</h3>
+                    <h3>Invitation Cards</h3>
                     <button className={`close-btn ${isDarkMode? "dark-mode" : "light-mode"}`} onClick={onClose}>X</button>
                 </div>
                 <div className="modal-body">

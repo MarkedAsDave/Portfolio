@@ -159,7 +159,7 @@ export default function Projects({ isDarkMode }) {
               >
                 {" "}
                 <CardGiftcardIcon fontSize="large" />
-                <h4>Invitations</h4>
+                <h4>Invitation Cards</h4>
               </div>
               <div
                 className={`view-btn ${
