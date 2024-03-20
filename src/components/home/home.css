@@ -64,7 +64,7 @@
 
 .btn-cv.light-mode:focus {
   outline: 0;
-  color: black;
+  color: rgb(255, 255, 255);
   background-color: #8435c2;
   border-radius: 10px;
 }

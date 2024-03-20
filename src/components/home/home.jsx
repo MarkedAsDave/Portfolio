@@ -3,7 +3,7 @@ import "./home.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import "../styles/globalstyles.css";
 
-export default function Home({isDarkMode}) {
+export default function Home({isDarkMode, getInTouch}) {
  const handleViewCV = () => {
     // Google Drive link to your CV
     const cvLink = "https://drive.google.com/file/d/1fjLkWFK9tPaIty2TVr9y2iOTnzzUlArS/view?usp=sharing";
@@ -38,7 +38,7 @@ export default function Home({isDarkMode}) {
               digital vision to life!
             </p>
             <div className="content-btn">
-              <button className={`btn-get ${isDarkMode ? "dark-mode" : "light-mode"}`}>GET IN TOUCH</button>
+              <button className={`btn-get ${isDarkMode ? "dark-mode" : "light-mode"}`} onClick={getInTouch}>GET IN TOUCH</button>
               <button className={`btn-cv ${isDarkMode ? "dark-mode" : "light-mode"}`} onClick={handleViewCV}>
                 Download CV
                 <CloudDownloadIcon fontSize="small" />  

@@ -90,7 +90,7 @@ function App() {
       }, 100)
     }
   }
-  
+
   return (
     <>
       <div className={`container ${isDarkMode ? "dark-mode" : "light"}`}>
@@ -136,7 +136,7 @@ function App() {
             />
           </div>
         </div>
-        <Home isDarkMode={isDarkMode} />
+        <Home isDarkMode={isDarkMode} getInTouch={scrollToContact}/>
         <div ref={projectsRef}>
           <Projcets isDarkMode={isDarkMode} />
         </div>
