@@ -1,0 +1,60 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1000; /* Ensure overlay is above other content */
+}
+
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 90vw; /* Set maximum width for responsiveness */
+    max-height: 90vh; /* Set maximum height for responsiveness */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    z-index: 1001; /* Ensure modal is above overlay */
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-header h3{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.close-btn {
+    height: 5vh;
+    width: auto;
+    font-size: small;
+  }
+  
+  .close-btn.dark-mode {
+    background-color: #8435c2;
+    color: white;
+  }
+  
+  .close-btn.light-mode {
+    background-color: #8435c2;
+    color: white;
+  }
+.modal-content {
+    /* Add any additional styling for modal content */
+}
+
+

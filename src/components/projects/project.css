@@ -58,25 +58,26 @@
     align-items: left;
     justify-content: center;
     border-radius: 10px;
+    align-items: center;
 }
 
 .view-btn.light-mode {
-    
+    color: #8435C2; 
     background-color:  #d9d9d9;
   }
   
 .view-btn.light-mode:hover{
-    
+    color: white;
     background-color:  #8435C2;
   }
   .view-btn.dark-mode {
-    /* background-color: rgb(184, 169, 204); */
-    background-color: #8435C2;
+    color: white;
+    border: 2px solid #8435C2;
   }
 
   .view-btn.dark-mode:hover {
-    /* background-color: rgb(184, 169, 204); */
-    background-color: #d9d9d9;
+    color: #8435C2;
+    border: 2px solid #d9d9d9;
   }
 
 

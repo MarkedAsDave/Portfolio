@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/globalstyles.css";
 import "./project.css";
 import Card from "../card/card";
@@ -8,8 +8,53 @@ import hanap from "../img/hanap.png";
 import mobile from "../img/mobile.png";
 import vehisched from "../img/vehisched.png";
 import react from "../img/react.png";
+import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import ViewCarouselIcon from "@mui/icons-material/ViewCarousel";
+import LabelImportantIcon from "@mui/icons-material/LabelImportant";
+import ShapeLineIcon from "@mui/icons-material/ShapeLine";
+import Invitation from "../modal/invitation";
+import Logo from "../modal/logo";
+import Sticker from "../modal/sticker";
+import Banner from "../modal/banner";
 
 export default function Projects({ isDarkMode }) {
+  const [showInvitation, setShowInvitation] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
+  const [showSticker, setShowSticker] = useState(false);
+
+  const handleInvitation = () => {
+    setShowInvitation(!showInvitation);
+  };
+
+  const handleCloseInvitation = () => {
+    setShowInvitation(false);
+  };
+
+  const handleBanner = () => {
+    setShowBanner(!showBanner);
+  };
+
+  const handleLogo = () => {
+    setShowLogo(!showLogo);
+  };
+
+  const handleSticker = () => {
+    setShowSticker(!showSticker);
+  };
+
+  const handleCloseBanner = () => {
+    setShowBanner(false);
+  };
+
+  const handleCloseLogo = () => {
+    setShowLogo(false);
+  };
+
+  const handleCloseSticker = () => {
+    setShowSticker(false);
+  };
+
   return (
     <>
       <div
@@ -110,28 +155,52 @@ export default function Projects({ isDarkMode }) {
                 className={`view-btn ${
                   isDarkMode ? "dark-mode" : "light-mode"
                 }`}
-              ></div>
+                onClick={handleInvitation}
+              >
+                {" "}
+                <CardGiftcardIcon fontSize="large" />
+                <h4>Invitations</h4>
+              </div>
               <div
                 className={`view-btn ${
                   isDarkMode ? "dark-mode" : "light-mode"
                 }`}
-              ></div>
+                onClick={handleBanner}
+              >
+                {" "}
+                <ViewCarouselIcon fontSize="large" />
+                <h4>Banners</h4>
+              </div>
             </div>
             <div className="horizontal">
               <div
                 className={`view-btn ${
                   isDarkMode ? "dark-mode" : "light-mode"
                 }`}
-              ></div>
+                onClick={handleSticker}
+              >
+                {" "}
+                <LabelImportantIcon fontSize="large" />
+                <h4>Stickers</h4>
+              </div>
               <div
                 className={`view-btn ${
                   isDarkMode ? "dark-mode" : "light-mode"
                 }`}
-              ></div>
+                onClick={handleLogo}
+              >
+                {" "}
+                <ShapeLineIcon fontSize="large" />
+                <h4>Logo</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      {showInvitation && <Invitation onClose={handleCloseInvitation} />}
+      {showBanner && <Banner onClose={handleCloseBanner} />}
+      {showSticker && <Sticker onClose={handleCloseSticker} />}
+      {showLogo && <Logo onClose={handleCloseLogo} />}  
     </>
   );
 }
