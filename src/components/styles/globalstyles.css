@@ -73,13 +73,13 @@
 
 }
 
-button.light-mode{
+.button-s.light-mode{
     background-color: transparent;
     color: black;
     border: 0;
 }
 
-button.light-mode:focus{
+.button-s.light-mode:focus{
     outline: 0;
     border-top: 0;
     border-bottom: 0;
@@ -90,7 +90,7 @@ button.light-mode:focus{
     background-color: transparent;
 }
 
-button.light-mode:hover{
+.button-s.light-mode:hover{
     outline: 0;
     border-top: 0;
     border-bottom: 0;
@@ -102,12 +102,12 @@ button.light-mode:hover{
 }
 
 
-button.dark-mode {
+.button-s.dark-mode {
     background-color: transparent; 
     color: white;
 }
 
-button.dark-mode:focus{
+.button-s.dark-mode:focus{
     outline: 0;
     border-top: 0;
     border-bottom: 0;
@@ -118,7 +118,7 @@ button.dark-mode:focus{
     background-color: transparent;
 }
 
-button.dark-mode:hover{
+.button-s.dark-mode:hover{
     outline: 0;
     border-top: 0;
     border-bottom: 0;

@@ -90,7 +90,7 @@ function App() {
       }, 100)
     }
   }
-
+  
   return (
     <>
       <div className={`container ${isDarkMode ? "dark-mode" : "light"}`}>
@@ -100,24 +100,24 @@ function App() {
           </div>
           <div className="header-btn-container">
             <button
-              className={isDarkMode ? "dark-mode" : "light-mode"}
+              className={`button-s ${isDarkMode ? "dark-mode" : "light-mode"}`}
               onClick={() => window.scrollTo(0, 0)} // Scroll to top for HOME
             >
               HOME
             </button>
             <button
-              className={isDarkMode ? "dark-mode" : "light-mode"}
+              className={`button-s ${isDarkMode ? "dark-mode" : "light-mode"}`}
               onClick={scrollToProjects} // Scroll to Projects component
             >
               PROJECTS
             </button>
             <button
-              className={isDarkMode ? "dark-mode" : "light-mode"}
+             className={`button-s ${isDarkMode ? "dark-mode" : "light-mode"}`}
               onClick={scrollToAbout}
             >
               ABOUT
             </button>
-            <button className={isDarkMode ? "dark-mode" : "light-mode"}
+            <button className={`button-s ${isDarkMode ? "dark-mode" : "light-mode"}`}
               onClick={scrollToContact}
             >    
               CONTACT

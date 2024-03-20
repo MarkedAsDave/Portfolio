@@ -3,17 +3,17 @@ import "./home.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import "../styles/globalstyles.css";
 
-export default function Home({isDarkMode, }) {
-  const handleDownloadCV = () => {
-    // Path to your CV PDF file
-    const cvPath = "../cv/cv.pdf";
+export default function Home({isDarkMode}) {
+ const handleViewCV = () => {
+    // Google Drive link to your CV
+    const cvLink = "https://drive.google.com/file/d/1fjLkWFK9tPaIty2TVr9y2iOTnzzUlArS/view?usp=sharing";
 
     // Create a temporary link element
     const link = document.createElement("a");
-    link.href = cvPath;
+    link.href = cvLink;
 
-    // Set the download attribute to force download
-    link.download = "Your_CV.pdf";
+    // Set the target attribute to open the link in a new tab
+    link.target = "_blank";
 
     // Append the link to the document body
     document.body.appendChild(link);
@@ -23,10 +23,9 @@ export default function Home({isDarkMode, }) {
 
     // Cleanup: Remove the link from the DOM
     document.body.removeChild(link);
-  };
-  
+ };
 
-  return (
+ return (
     <>
       <div className="home-container">
         <div className="left">
@@ -39,10 +38,10 @@ export default function Home({isDarkMode, }) {
               digital vision to life!
             </p>
             <div className="content-btn">
-              <button className={`btn-cv ${isDarkMode ? "dark-mode" : "light-mode"}`}>GET IN TOUCH</button>
-             <button className="btn-cv" onClick={handleDownloadCV}>
+              <button className={`btn-get ${isDarkMode ? "dark-mode" : "light-mode"}`}>GET IN TOUCH</button>
+              <button className={`btn-cv ${isDarkMode ? "dark-mode" : "light-mode"}`} onClick={handleViewCV}>
                 Download CV
-                <CloudDownloadIcon fontSize="small" />
+                <CloudDownloadIcon fontSize="small" />  
               </button>
             </div>
           </div>
@@ -52,5 +51,5 @@ export default function Home({isDarkMode, }) {
         </div>
       </div>
     </>
-  );
+ );
 }
