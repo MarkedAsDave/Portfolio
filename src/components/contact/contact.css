@@ -104,9 +104,19 @@
   color: #8435c2;
 }
 
+.a-icons.light-mode:hover {
+  color: black;
+}
+
+
 .a-icons.dark-mode {
   color: white;
 }
+
+.a-icons.dark-mode:hover {
+  color: #8435c2;
+}
+
 
 .down {
   display: flex;
