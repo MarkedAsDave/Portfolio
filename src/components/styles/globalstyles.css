@@ -69,8 +69,8 @@
     flex-direction: row;
     width: 75%;
     justify-content: center;
-    gap: 1%;
-
+    gap: 3%;
+    font-size: small;
 }
 
 .button-s.light-mode{

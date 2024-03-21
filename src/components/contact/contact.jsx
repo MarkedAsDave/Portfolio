@@ -96,7 +96,7 @@ export default function Contact({ isDarkMode }) {
   return (
     <>
       <div className="contact-container">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <div className="up">
           <div className="up-left">
             <div

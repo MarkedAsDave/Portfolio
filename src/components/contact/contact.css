@@ -8,12 +8,13 @@
   gap: 2%;
 }
 
-.contact-container h2 {
+.contact-container h3 {
   visibility: hidden;
+  height: 10x;
+  margin-bottom: -1vh;
 }
 
 .up {
-  margin-top: -3vh;
   display: flex;
   flex-direction: row;
   width: 85vw;
