@@ -280,7 +280,7 @@ export default function Contact({ isDarkMode }) {
           </button>
         </div>
         <div className="footer">
-          <p>© {currentYear} Mark Dave Lorejo</p>
+          <p>© {currentYear} Mark Dave Lorejo |  All rights reserved.</p>
         </div>
       </div>
     </>
