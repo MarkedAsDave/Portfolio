@@ -8,9 +8,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import axios from "axios";
-import Stack from '@mui/material/Stack';
-import CircularProgress from '@mui/material/CircularProgress';
-import "./contact.css"
+import Stack from "@mui/material/Stack";
+// import CircularProgress from '@mui/material/CircularProgress';
+import LinearProgress from "@mui/material/LinearProgress";
+import "./contact.css";
 export default function Contact({ isDarkMode }) {
   const currentYear = new Date().getFullYear();
 
@@ -209,7 +210,11 @@ export default function Contact({ isDarkMode }) {
             </div>
           </div>
         </div>
+        
         <div className={`down ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+        {isSubmitting && <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
+            <LinearProgress color="secondary" />
+          </Stack>}
           <div className="name-email">
             <input
               className={`input-fields ${
@@ -268,7 +273,8 @@ export default function Contact({ isDarkMode }) {
               <span className="error">{formErrors.message}</span>
             )}
           </div>
-          {isSubmitting && <CircularProgress color="secondary" />}
+          
+          {/* {isSubmitting && <CircularProgress color="secondary" />} */}
           <button className="button-send" onClick={handleSubmit}>
             Send
           </button>
