@@ -1,4 +1,3 @@
-import "./contact.css";
 import React, { useState } from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ShareIcon from "@mui/icons-material/Share";
@@ -9,7 +8,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import axios from "axios";
-
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
+import "./contact.css"
 export default function Contact({ isDarkMode }) {
   const currentYear = new Date().getFullYear();
 
@@ -27,6 +28,9 @@ export default function Contact({ isDarkMode }) {
     message: "",
   });
 
+  // New state to track form submission status
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -36,17 +40,16 @@ export default function Contact({ isDarkMode }) {
   };
 
   const validateEmail = (email) => {
-    // Email validation regex pattern
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Set submission status to true
 
     let errors = {};
 
-    // Validate form fields
     if (formData.fullname.trim() === "") {
       errors.fullname = "Full name is required";
     }
@@ -63,32 +66,32 @@ export default function Contact({ isDarkMode }) {
     }
 
     setFormErrors(errors);
-    console.log(formData)
-    // If no errors, submit the form
+
     if (Object.keys(errors).length === 0) {
-      // Send form data to backend
-      axios.post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
+      axios
+        .post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
         .then((response) => {
-          console.log(response.data);
-          // Optionally, reset form fields
           setFormData({
             fullname: "",
             email: "",
             subject: "",
             message: "",
           });
-          // Optionally, show success message
+          setIsSubmitting(false); // Reset submission status after successful submission
         })
         .catch((error) => {
           console.error("Error submitting form:", error);
-          // Optionally, show error message
+          setIsSubmitting(false); // Reset submission status after failed submission
         });
+    } else {
+      setIsSubmitting(false); // Reset submission status if there are errors
     }
   };
+
   return (
     <>
       <div className="contact-container">
@@ -209,47 +212,66 @@ export default function Contact({ isDarkMode }) {
         <div className={`down ${isDarkMode ? "dark-mode" : "light-mode"}`}>
           <div className="name-email">
             <input
-              className={`input-fields ${isDarkMode ? "dark-mode" : "light-mode"}`}
+              className={`input-fields ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
               type="text"
               name="fullname"
               placeholder="Full Name"
               value={formData.fullname}
               onChange={handleInputChange}
             />
-            {formErrors.fullname && <span className="error">{formErrors.fullname}</span>}
+            {formErrors.fullname && (
+              <span className="error">{formErrors.fullname}</span>
+            )}
             <input
-              className={`input-fields ${isDarkMode ? "dark-mode" : "light-mode"}`}
+              className={`input-fields ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
               type="email"
               name="email"
               placeholder="Email"
               value={formData.email}
               onChange={handleInputChange}
             />
-            {formErrors.email && <span className="error">{formErrors.email}</span>}
+            {formErrors.email && (
+              <span className="error">{formErrors.email}</span>
+            )}
           </div>
           <div className="subject">
             <input
-              className={`input-fields ${isDarkMode ? "dark-mode" : "light-mode"}`}
+              className={`input-fields ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
               type="text"
               name="subject"
               placeholder="Subject"
               value={formData.subject}
               onChange={handleInputChange}
             />
-            {formErrors.subject && <span className="error">{formErrors.subject}</span>}
+            {formErrors.subject && (
+              <span className="error">{formErrors.subject}</span>
+            )}
           </div>
           <div className="message">
             <input
-              className={`input-fields-message ${isDarkMode ? "dark-mode" : "light-mode"}`}
+              className={`input-fields-message ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
               type="text"
               name="message"
               placeholder="Message"
               value={formData.message}
               onChange={handleInputChange}
             />
-            {formErrors.message && <span className="error">{formErrors.message}</span>}
+            {formErrors.message && (
+              <span className="error">{formErrors.message}</span>
+            )}
           </div>
-          <button className="button-send"  onClick={handleSubmit}>Send</button>
+          {isSubmitting && <CircularProgress color="secondary" />}
+          <button className="button-send" onClick={handleSubmit}>
+            Send
+          </button>
         </div>
         <div className="footer">
           <p>© {currentYear} Mark Dave Lorejo</p>
