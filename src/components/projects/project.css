@@ -25,20 +25,6 @@
   flex-direction: row;
   width: 95vw;
   gap: 0;
-  opacity: 0; /* Start with opacity 0 */
-    transform: translateY(-20px); /* Start position above its final position */
-    animation: fadeInUp 1s ease forwards; /* Apply animation */
-}
-
-@keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start from above */
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0); /* End at its final position */
-  }
 }
 
 .project-content{
