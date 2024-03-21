@@ -43,6 +43,20 @@
 
 .grid-right p{
     text-align: justify;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(100px); /* Start position above its final position */
+    animation: slideInFromRight 1.9s ease forwards; /* Apply animation */
+}
+
+@keyframes slideInFromRight {
+  from {
+      opacity: 0;
+      transform: translateX(100px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at its final position */
+  }
 }
 
 .grid-center{
@@ -61,6 +75,20 @@
     height: 15px;
     background-color: #8435C2;
     border-radius: 100%;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-50px); /* Start position above its final position */
+    animation: fadeInUp  1.9s ease forwards; /* Apply animation */
+}
+
+@keyframes fadeInUp  {
+  from {
+      opacity: 0;
+      transform: translateY(-50px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at its final position */
+  }
 }
 
 .circle.dark-mode{
@@ -75,6 +103,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-100px); /* Start position above its final position */
+    animation: slideInFromLeft 1.9s ease forwards; /* Apply animation */
+}
+
+@keyframes slideInFromLeft  {
+  from {
+      opacity: 0;
+      transform: translateX(-100px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at its final position */
+  }
 }
 
 .image-container{

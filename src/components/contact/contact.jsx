@@ -210,12 +210,16 @@ export default function Contact({ isDarkMode }) {
             </div>
           </div>
         </div>
-        
         <div className={`down ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-        {isSubmitting && <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
-            <LinearProgress color="secondary" />
-          </Stack>}
+          {isSubmitting && (
+            <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
+              <LinearProgress color="secondary" />
+            </Stack>
+          )}
           <div className="name-email">
+          {formErrors.fullname && (
+              <span className="error-fullname">{formErrors.fullname}</span>
+            )}
             <input
               className={`input-fields ${
                 isDarkMode ? "dark-mode" : "light-mode"
@@ -226,9 +230,6 @@ export default function Contact({ isDarkMode }) {
               value={formData.fullname}
               onChange={handleInputChange}
             />
-            {formErrors.fullname && (
-              <span className="error">{formErrors.fullname}</span>
-            )}
             <input
               className={`input-fields ${
                 isDarkMode ? "dark-mode" : "light-mode"
@@ -240,7 +241,7 @@ export default function Contact({ isDarkMode }) {
               onChange={handleInputChange}
             />
             {formErrors.email && (
-              <span className="error">{formErrors.email}</span>
+              <span className="error-email">{formErrors.email}</span>
             )}
           </div>
           <div className="subject">
@@ -255,7 +256,7 @@ export default function Contact({ isDarkMode }) {
               onChange={handleInputChange}
             />
             {formErrors.subject && (
-              <span className="error">{formErrors.subject}</span>
+              <span className="error-subject">{formErrors.subject}</span>
             )}
           </div>
           <div className="message">
@@ -270,17 +271,17 @@ export default function Contact({ isDarkMode }) {
               onChange={handleInputChange}
             />
             {formErrors.message && (
-              <span className="error">{formErrors.message}</span>
+              <span className="error-message">{formErrors.message}</span>
             )}
           </div>
-          
+
           {/* {isSubmitting && <CircularProgress color="secondary" />} */}
           <button className="button-send" onClick={handleSubmit}>
             Send
           </button>
         </div>
         <div className="footer">
-          <p>© {currentYear} Mark Dave Lorejo |  All rights reserved.</p>
+          <p>© {currentYear} Mark Dave Lorejo | All rights reserved.</p>
         </div>
       </div>
     </>

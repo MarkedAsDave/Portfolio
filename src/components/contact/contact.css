@@ -230,3 +230,47 @@
   align-items: center;
   color: #d9d9d9;
 }
+
+
+.error-fullname{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-right: 30%;
+}
+
+.error-email{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}
+
+.error-subject{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}
+
+.error-message{
+  position: absolute;
+  width: 20vw;
+  margin-top: 3%;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}
