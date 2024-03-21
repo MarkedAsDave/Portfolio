@@ -67,7 +67,7 @@ export default function Contact({ isDarkMode }) {
     // If no errors, submit the form
     if (Object.keys(errors).length === 0) {
       // Send form data to backend
-      axios.post("http://localhost:8000/api/contact/", formData, {
+      axios.post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
         headers: {
             'Content-Type': 'application/json',
         }
