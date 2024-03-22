@@ -9,7 +9,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import axios from "axios";
 import Stack from "@mui/material/Stack";
-import SendIcon from '@mui/icons-material/Send';
 import LinearProgress from "@mui/material/LinearProgress";
 import "./contact.css";
 export default function Contact({ isDarkMode }) {
@@ -277,7 +276,7 @@ export default function Contact({ isDarkMode }) {
 
           {/* {isSubmitting && <CircularProgress color="secondary" />} */}
           <button className="button-send" onClick={handleSubmit}>
-            Send <SendIcon fontSize="small"/>
+            Send
           </button>
         </div>
         <div className="footer">
