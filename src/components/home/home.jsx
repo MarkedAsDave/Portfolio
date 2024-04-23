@@ -6,7 +6,7 @@ import "../styles/globalstyles.css";
 export default function Home({isDarkMode, getInTouch}) {
  const handleViewCV = () => {
     // Google Drive link to your CV
-    const cvLink = "https://drive.google.com/file/d/1fjLkWFK9tPaIty2TVr9y2iOTnzzUlArS/view?usp=sharing";
+    const cvLink = "https://drive.google.com/file/d/14XhXU5FJ2Pzzb5dCd2ww_wt5Bwsxcico/view?usp=sharing";
 
     // Create a temporary link element
     const link = document.createElement("a");
