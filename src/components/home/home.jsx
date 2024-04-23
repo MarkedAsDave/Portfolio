@@ -47,7 +47,7 @@ export default function Home({isDarkMode, getInTouch}) {
           </div>
         </div>
         <div className="right">
-          <h2>Photo here</h2>
+          <h2>I will soon insert my photo here!</h2>
         </div>
       </div>
     </>
