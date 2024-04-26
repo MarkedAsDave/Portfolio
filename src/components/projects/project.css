@@ -83,13 +83,13 @@
 @media (max-width: 480px) {
   .project-container {
     width: fit-content;
-    height: 365vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 50vh;
   }
   .project-container p {
     font-weight: bold;
@@ -134,8 +134,8 @@
   .view-btn {
     display: flex;
     flex-direction: row;
-    width: 25vw;
-    height: 15vh;
+    width: 50vw;
+    height: 25vh;
     padding: 10px;
     align-items: left;
     justify-content: center;
