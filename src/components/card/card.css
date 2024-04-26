@@ -117,8 +117,8 @@
   .card-container {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    height: 25vh;
+    width: 60vw;
+    height: 30vh;
     padding: 10px;
     align-items: left;
     justify-content: center;
