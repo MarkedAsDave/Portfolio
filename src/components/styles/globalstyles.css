@@ -150,6 +150,11 @@
   }
 
   .header {
+    width: unset;
+    height: unset;
+  }
+
+  .header-btn-container {
     visibility: hidden;
     width: unset;
     height: unset;
