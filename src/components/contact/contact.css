@@ -383,6 +383,10 @@
     height: 1rem;
     gap: 10%;
   }
+
+  .personal-info-down p{
+    font-size: 0.9rem;
+  }
   
   .personal-info-icon {
     display: flex;

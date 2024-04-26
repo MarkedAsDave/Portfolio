@@ -111,7 +111,7 @@ export default function Contact({ isDarkMode }) {
                   <h4>Address</h4>
                 </div>
                 <div className="personal-info-down">
-                  <p>Cagayan de Oro City, Misamis Oriental</p>
+                  <p>Cagayan de Oro City, Misamis Oriental PH</p>
                 </div>
               </div>
             </div>
