@@ -159,7 +159,7 @@
 
 @media (max-width: 480px){
   .home-container {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +169,7 @@
   .left {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 90%;
     height: 30vh;
     align-items: left;
     justify-content: center;
@@ -177,7 +177,7 @@
   
   .content {
     margin-top: 30px;
-    width: auto;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +186,7 @@
   
   .content p {
     text-align: left;
-    height: 35%;
+    height: 40%;
     width: 95%; 
   }
   .content h2 {
