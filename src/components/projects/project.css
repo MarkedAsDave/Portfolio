@@ -132,8 +132,8 @@
 
   .view-btn {
     display: flex;
-    flex-direction: column;
-    width: 50vw;
+    flex-direction: row;
+    width: 25vw;
     height: 25vh;
     padding: 10px;
     align-items: left;
