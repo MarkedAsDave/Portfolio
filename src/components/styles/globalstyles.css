@@ -155,17 +155,17 @@
 
   .header-btn-container {
     visibility: hidden;
-    width: 40%;
+    width: 20%;
     height: unset;
   }
 
   .switch-btn{
-    margin-left: -8vw;
+    margin-left: -5vw;
   }
 
   .user {
     font-weight: bold;
-    margin-right: -8vw;
+    margin-right: -5vw;
     height: fit-content;
   }
 
