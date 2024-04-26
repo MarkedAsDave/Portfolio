@@ -124,7 +124,7 @@
 .down {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 100%;
   height: 45%;
   border-radius: 10px;
   align-items: center;
@@ -290,7 +290,7 @@
 
 @media (max-width: 480px){
   .contact-container {
-    width: 95vw;
+    width: 90%;
     height: 100vh;
     justify-content: flex-start;
     align-items: center;
@@ -308,7 +308,7 @@
   .up {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: 35%;
     text-align: left;
     align-items: center;
@@ -319,7 +319,7 @@
   .up-left {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 90%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -416,7 +416,7 @@
   .down {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 90%;
     height: 60%;
     border-radius: 10px;
     align-items: left;
@@ -439,7 +439,7 @@
     margin-top: 10px;
     justify-content: left;
     gap: 5px;
-    width: 48vw;
+    width: 85%;
     margin-left: -17px;
   }
   
@@ -450,7 +450,7 @@
     height: 12%;
     margin-top: 1%;
     justify-content: center;
-    width: 48vw;
+    width: 85%;
     margin-left: -17px;  }
   
   
@@ -460,13 +460,13 @@
     height: 50%;
     margin-top: -5vh;
     justify-content: center;
-    width: 48vw;
+    width: 85%;
     margin-left: -17px;  }
   
   
   
   .input-fields-message{
-    width: 100%;
+    width: 85%;
     font-size: small;
     height: 60%;
     padding: 10px;
