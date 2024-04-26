@@ -124,7 +124,7 @@
 .down {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 85vw;
   height: 45%;
   border-radius: 10px;
   align-items: center;
