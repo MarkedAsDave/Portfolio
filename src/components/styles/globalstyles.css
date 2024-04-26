@@ -156,7 +156,7 @@
 
   .header-btn-container {
     visibility: hidden;
-    width: 10px;
+    width: unset;
     height: unset;
   }
 
