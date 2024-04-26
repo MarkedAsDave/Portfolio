@@ -43,6 +43,7 @@
   justify-content: left;
   align-items: center;
   gap: 5%;
+  z-index: 999;
 }
 
 .btn-cv {
