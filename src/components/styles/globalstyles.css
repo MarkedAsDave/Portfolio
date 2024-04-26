@@ -150,7 +150,7 @@
   }
 
   .header {
-    width: unset;
+    width: 90%;
     height: unset;
   }
 
@@ -158,6 +158,10 @@
     visibility: hidden;
     width: unset;
     height: unset;
+  }
+
+  .switch-btn{
+    margin-left: -3vw;
   }
 
 }
