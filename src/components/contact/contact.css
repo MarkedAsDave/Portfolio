@@ -280,9 +280,306 @@
 .error-message{
   position: absolute;
   width: 20vw;
-  margin-top: 3%;
+  margin-top: 30;
   color: red;
   justify-self: flex-start;
   text-align: right;
   margin-left: 52%;
+}
+
+
+@media (max-width: 480px){
+  .contact-container {
+    width: 95vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+  
+  .contact-container h3 {
+    visibility: hidden;
+    height: 10x;
+    margin-bottom: -1vh;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35%;
+    text-align: left;
+    align-items: center;
+    gap: 2%;
+    
+  }
+  
+  .up-left {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .up-left-content {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .up-left-content.light-mode {
+    background-color: #d9d9d9;
+  }
+  
+  .up-left-content.dark-mode {
+    background-color: transparent;
+    border: 2px solid #8435c2;
+    box-shadow: 0 0 20px rgba(132, 53, 194, 0.5); 
+  }
+  
+  .icon-container {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8435c2;
+    margin-left: 20px;
+    border-radius: 100%;
+    color: white;
+  }
+  
+  .personal-info {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 5%;
+    gap: 20%;
+  }
+  
+  .personal-info-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1rem;
+  }
+  
+  .personal-info-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1rem;
+    gap: 10%;
+  }
+  
+  .personal-info-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1rem;
+    gap: 10%;
+  }
+  
+  .a-icons {
+    display: unset;
+  }
+  .a-icons.light-mode {
+    color: #8435c2;
+  }
+  
+  .a-icons.light-mode:hover {
+    color: black;
+  }
+  
+  
+  .a-icons.dark-mode {
+    color: white;
+  }
+  
+  .a-icons.dark-mode:hover {
+    color: #8435c2;
+  }
+  
+  
+  .down {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    align-items: left;
+    
+  }
+  
+  .down.light-mode {
+    background-color: #d9d9d9;
+  }
+  
+  .down.dark-mode {
+    border: 2px solid #8435c2;
+    box-shadow: 0 0 20px rgba(132, 53, 194, 0.5); 
+  }
+  
+  .name-email{
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    margin-top: 10px;
+    justify-content: left;
+    gap: 5px;
+    width: 48vw;
+    margin-left: -17px;
+  }
+  
+  
+  .subject{
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    margin-top: 1%;
+    justify-content: center;
+    width: 48vw;
+    margin-left: -17px;  }
+  
+  
+  .message{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: -5vh;
+    justify-content: center;
+    width: 48vw;
+    margin-left: -17px;  }
+  
+  
+  
+  .input-fields-message{
+    width: 100%;
+    font-size: small;
+    height: 60%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+  }
+  
+  .input-fields-message.light-mode{
+    background-color: white;
+    color: black;
+  }
+  
+  .input-fields-message.dark-mode{
+    background-color: transparent;
+    color: white;
+    border: 2px solid  #8435c2;;
+  }
+  
+  .input-fields{
+    width: 100%;
+    font-size: small;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+  }
+  
+  .input-fields.light-mode{
+    background-color: white;
+    color: black;
+  }
+  
+  .input-fields.dark-mode{
+    background-color: transparent;
+    color: white;
+    border: 2px solid  #8435c2;;
+  }
+  
+  .button-send{
+    background-color:  #8435C2; 
+    width: auto;
+    color: white;
+    font-size: small;
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: unset ;
+  }
+  
+  .button-send:focus{
+    outline: 0;
+  }
+  .button-send:hover{
+    background-color: white;
+    color: #8435C2;
+  }
+  
+  .footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: 55vw;
+    height: 5vh;
+    background-color: #8435c2;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
+    text-align: center;
+  }
+  
+  
+  .error-fullname{
+    position: absolute;
+    width: 20vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+    justify-self: flex-start;
+    text-align: right;
+    margin-right: 30%;
+  }
+  
+  .error-email{
+    position: absolute;
+    width: 20vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+    justify-self: flex-start;
+    text-align: right;
+    margin-left: 52%;
+  }
+  
+  .error-subject{
+    position: absolute;
+    width: 20vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+    justify-self: flex-start;
+    text-align: right;
+    margin-left: 52%;
+  }
+  
+  .error-message{
+    position: absolute;
+    width: 20vw;
+    margin-top: 3%;
+    color: red;
+    justify-self: flex-start;
+    text-align: right;
+    margin-left: 52%;
+  }
+  
 }
