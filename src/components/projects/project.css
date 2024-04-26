@@ -83,7 +83,7 @@
 @media (max-width: 480px) {
   .project-container {
     width: fit-content;
-    height: 300vh;
+    height: 370vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
