@@ -156,12 +156,18 @@
 
   .header-btn-container {
     visibility: hidden;
-    width: unset;
+    width: 10px;
     height: unset;
   }
 
   .switch-btn{
-    margin-left: -3vw;
+    margin-left: -10vw;
+  }
+
+  .user {
+    font-weight: bold;
+    margin-right: -8vw;
+    height: fit-content;
   }
 
 }
