@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./home.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import "../styles/globalstyles.css";
+import meakoImg from '../img/meako.png';
 
 export default function Home({isDarkMode, getInTouch}) {
  const handleViewCV = () => {
@@ -47,7 +48,7 @@ export default function Home({isDarkMode, getInTouch}) {
           </div>
         </div>
         <div className="right">
-          <h2>I will soon insert my photo here!</h2>
+        <img src={meakoImg} alt="Meako" className="my-img" />
         </div>
       </div>
     </>

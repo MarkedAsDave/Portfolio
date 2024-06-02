@@ -157,6 +157,11 @@
   justify-content: center;
 }
 
+.my-img {
+  width: 70%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
 @media (max-width: 480px){
   .home-container {
@@ -314,5 +319,7 @@
     width: 0;
     height: 50px;
   }
+
+
   
 }
