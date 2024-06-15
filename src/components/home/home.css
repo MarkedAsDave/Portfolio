@@ -60,13 +60,13 @@
 
 .btn-cv.light-mode {
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
 }
 
 .btn-cv.light-mode:focus {
   outline: 0;
   color: rgb(255, 255, 255);
-  background-color: #8435c2;
+  background-color: #3d1dca;
   border-radius: 10px;
 }
 
@@ -79,13 +79,13 @@
 
 .btn-cv.dark-mode {
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
 }
 
 .btn-cv.dark-mode:focus {
   outline: 0;
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
   border-radius: 10px;
 }
 
@@ -123,7 +123,7 @@
 .btn-get.light-mode:hover {
   outline: 0;
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
   border-radius: 10px;
 }
 
@@ -144,7 +144,7 @@
 .btn-get.dark-mode:hover {
   outline: 0;
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
   border-radius: 10px;
 }
 
@@ -226,13 +226,13 @@
   
   .btn-cv.light-mode {
     color: white;
-    background-color: #8435c2;
+    background-color: #3d1dca;
   }
   
   .btn-cv.light-mode:focus {
     outline: 0;
     color: rgb(255, 255, 255);
-    background-color: #8435c2;
+    background-color: #3d1dca;
     border-radius: 10px;
   }
   
@@ -245,13 +245,13 @@
   
   .btn-cv.dark-mode {
     color: white;
-    background-color: #8435c2;
+    background-color: #3d1dca;
   }
   
   .btn-cv.dark-mode:focus {
     outline: 0;
     color: white;
-    background-color: #8435c2;
+    background-color: #3d1dca;
     border-radius: 10px;
   }
   
@@ -289,7 +289,7 @@
   .btn-get.light-mode:hover {
     outline: 0;
     color: white;
-    background-color: #8435c2;
+    background-color: #3d1dca;
     border-radius: 10px;
   }
   
@@ -310,7 +310,7 @@
   .btn-get.dark-mode:hover {
     outline: 0;
     color: white;
-    background-color: #8435c2;
+    background-color: #3d1dca;
     border-radius: 10px;
   }
   

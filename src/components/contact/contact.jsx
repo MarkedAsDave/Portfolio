@@ -96,188 +96,190 @@ export default function Contact({ isDarkMode }) {
     <>
       <div className="contact-container">
         <h3>Contact</h3>
-        <div className="up">
-          <div className="up-left">
-            <div
-              className={`up-left-content ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-            >
-              <div className="icon-container">
-                <LocationOnIcon />
-              </div>
-              <div className="personal-info">
-                <div className="personal-info-up">
-                  <h4>Address</h4>
+        <div className="contacts-content">
+          <div className="up">
+            <div className="up-left">
+              <div
+                className={`up-left-content ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+              >
+                <div className="icon-container">
+                  <LocationOnIcon />
                 </div>
-                <div className="personal-info-down">
-                  <p>Cagayan de Oro City, Misamis Oriental PH</p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`up-left-content ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-            >
-              <div className="icon-container">
-                <MailOutlineIcon />
-              </div>
-              <div className="personal-info">
-                <div className="personal-info-up">
-                  <h4>Email</h4>
-                </div>
-                <div className="personal-info-down">
-                  <p>markdavelorejo@gmail.com</p>
+                <div className="personal-info">
+                  <div className="personal-info-up">
+                    <h4>Address</h4>
+                  </div>
+                  <div className="personal-info-down">
+                    <p>Cagayan de Oro City, Misamis Oriental PH</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="up-left">
-            <div
-              className={`up-left-content ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-            >
-              <div className="icon-container">
-                <ShareIcon />
-              </div>
-              <div className="personal-info">
-                <div className="personal-info-up">
-                  <h4>Social Media</h4>
+              <div
+                className={`up-left-content ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+              >
+                <div className="icon-container">
+                  <MailOutlineIcon />
                 </div>
-                <div className="personal-info-icon">
-                  <a
-                    className={`a-icons ${
-                      isDarkMode ? "dark-mode" : "light-mode"
-                    }`}
-                    href="https://www.facebook.com/markdave.lorejo.7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FacebookIcon />
-                  </a>
-                  <a
-                    className={`a-icons ${
-                      isDarkMode ? "dark-mode" : "light-mode"
-                    }`}
-                    href="https://www.instagram.com/marcdavve/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <InstagramIcon />
-                  </a>
-                  <a
-                    className={`a-icons ${
-                      isDarkMode ? "dark-mode" : "light-mode"
-                    }`}
-                    href="https://www.linkedin.com/in/mark-dave-lorejo-5716242b3/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LinkedInIcon />
-                  </a>
-                  <a
-                    className={`a-icons ${
-                      isDarkMode ? "dark-mode" : "light-mode"
-                    }`}
-                    href="https://github.com/MarkedAsDave"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon />
-                  </a>
+                <div className="personal-info">
+                  <div className="personal-info-up">
+                    <h4>Email</h4>
+                  </div>
+                  <div className="personal-info-down">
+                    <p>markdavelorejo@gmail.com</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              className={`up-left-content ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-            >
-              <div className="icon-container">
-                <PhoneEnabledIcon />
-              </div>
-              <div className="personal-info">
-                <div className="personal-info-up">
-                  <h4>Phone</h4>
+            <div className="up-left">
+              <div
+                className={`up-left-content ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+              >
+                <div className="icon-container">
+                  <ShareIcon />
                 </div>
-                <div className="personal-info-down">
-                  <p>+639687220768</p>
+                <div className="personal-info">
+                  <div className="personal-info-up">
+                    <h4>Social Media</h4>
+                  </div>
+                  <div className="personal-info-icon">
+                    <a
+                      className={`a-icons ${
+                        isDarkMode ? "dark-mode" : "light-mode"
+                      }`}
+                      href="https://www.facebook.com/markdave.lorejo.7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FacebookIcon />
+                    </a>
+                    <a
+                      className={`a-icons ${
+                        isDarkMode ? "dark-mode" : "light-mode"
+                      }`}
+                      href="https://www.instagram.com/marcdavve/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <InstagramIcon />
+                    </a>
+                    <a
+                      className={`a-icons ${
+                        isDarkMode ? "dark-mode" : "light-mode"
+                      }`}
+                      href="https://www.linkedin.com/in/mark-dave-lorejo-5716242b3/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LinkedInIcon />
+                    </a>
+                    <a
+                      className={`a-icons ${
+                        isDarkMode ? "dark-mode" : "light-mode"
+                      }`}
+                      href="https://github.com/MarkedAsDave"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`up-left-content ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+              >
+                <div className="icon-container">
+                  <PhoneEnabledIcon />
+                </div>
+                <div className="personal-info">
+                  <div className="personal-info-up">
+                    <h4>Phone</h4>
+                  </div>
+                  <div className="personal-info-down">
+                    <p>+639687220768</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={`down ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-          {isSubmitting && (
-            <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
-              <LinearProgress color="secondary" />
-            </Stack>
-          )}
-          <div className="name-email">
-          {formErrors.fullname && (
-              <span className="error-fullname">{formErrors.fullname}</span>
+          <div className={`down ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+            {isSubmitting && (
+              <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
+                <LinearProgress />
+              </Stack>
             )}
-            <input
-              className={`input-fields ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-              type="text"
-              name="fullname"
-              placeholder="Full Name"
-              value={formData.fullname}
-              onChange={handleInputChange}
-            />
-            <input
-              className={`input-fields ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-            {formErrors.email && (
-              <span className="error-email">{formErrors.email}</span>
-            )}
-          </div>
-          <div className="subject">
-            <input
-              className={`input-fields ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleInputChange}
-            />
-            {formErrors.subject && (
-              <span className="error-subject">{formErrors.subject}</span>
-            )}
-          </div>
-          <div className="message">
-            <input
-              className={`input-fields-message ${
-                isDarkMode ? "dark-mode" : "light-mode"
-              }`}
-              type="text"
-              name="message"
-              placeholder="Message"
-              value={formData.message}
-              onChange={handleInputChange}
-            />
-            {formErrors.message && (
-              <span className="error-message">{formErrors.message}</span>
-            )}
-          </div>
+            <div className="name-email">
+              {formErrors.fullname && (
+                <span className="error-fullname">{formErrors.fullname}</span>
+              )}
+              <input
+                className={`input-fields ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                value={formData.fullname}
+                onChange={handleInputChange}
+              />
+              <input
+                className={`input-fields ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+              {formErrors.email && (
+                <span className="error-email">{formErrors.email}</span>
+              )}
+            </div>
+            <div className="subject">
+              <input
+                className={`input-fields ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+              />
+              {formErrors.subject && (
+                <span className="error-subject">{formErrors.subject}</span>
+              )}
+            </div>
+            <div className="message">
+              <input
+                className={`input-fields-message ${
+                  isDarkMode ? "dark-mode" : "light-mode"
+                }`}
+                type="text"
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleInputChange}
+              />
+              {formErrors.message && (
+                <span className="error-message">{formErrors.message}</span>
+              )}
+            </div>
 
-          {/* {isSubmitting && <CircularProgress color="secondary" />} */}
-          <button className="button-send" onClick={handleSubmit}>
-            Send
-          </button>
+            {/* {isSubmitting && <CircularProgress color="secondary" />} */}
+            <button className="button-send" onClick={handleSubmit}>
+              Send
+            </button>
+          </div>
         </div>
         <div className="footer">
           <p>© {currentYear} Mark Dave Lorejo | All rights reserved.</p>

@@ -20,18 +20,18 @@
 
 .container {
   background-color: #ffffff; /* Default light mode background color */
-  color: #333333; /* Default light mode text color */
+  color: #000000; /* Default light mode text color */
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .container.dark-mode {
-  background-color: #333333;
+  background-color: #000000;
   color: #ffffff;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .container.dark-mode h2 {
-  color: #a04ddf;
+  color: #5631fd;
 }
 
 .container.dark-mode button {
@@ -52,7 +52,7 @@
 }
 
 .header.dark-mode {
-  background-color: #333333;
+  background-color: #000000;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
@@ -82,7 +82,7 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #8435c2;
+  border-bottom: 2px solid #3d1dca;
   border-radius: 0;
   background-color: transparent;
 }
@@ -93,7 +93,7 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #8435c2;
+  border-bottom: 2px solid #3d1dca;
   border-radius: 0;
   background-color: transparent;
 }
@@ -109,7 +109,7 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #8435c2;
+  border-bottom: 2px solid #3d1dca;
   border-radius: 0;
   background-color: transparent;
 }
@@ -120,7 +120,7 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #8435c2;
+  border-bottom: 2px solid #3d1dca;
   border-radius: 0;
   background-color: transparent;
 }

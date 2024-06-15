@@ -15,8 +15,8 @@
 
 .card-container.dark-mode {
   background-color: transparent;
-  border: 2px solid #8435c2;
-  box-shadow: 0 0 20px rgba(132, 53, 194, 0.5); /* Adjust the values as needed */
+  border: 2px solid #3d1dca;
+  box-shadow: 0 0 20px rgba(61, 29, 202, 0.5);/* Adjust the values as needed */
 }
 
 
@@ -74,42 +74,42 @@
 }
 
 .button.dark-mode {
-  background-color: #8435c2;
+  background-color: #3d1dca;
   color: white;
 }
 
 .button.light-mode {
-  background-color: #8435c2;
+  background-color: #3d1dca;
   color: white;
 }
 
 .button.dark-mode:focus {
   outline: 0;
   background-color: white;
-  color: #8435c2;
+  color: #3d1dca;
 }
 .button.light-mode:focus {
   outline: 0;
   background-color: white;
-  color: #8435c2;
+  color: #3d1dca;
 }
 
 .button.dark-mode:hover {
   outline: 0;
   background-color: white;
-  color: #8435c2;
+  color: #3d1dca;
 }
 
 .button.light-mode:hover {
   outline: 0;
   background-color: white;
-  color: #8435c2;
+  color: #3d1dca;
 }
 
 .button.light-mode:focus {
   outline: 0;
   background-color: white;
-  color: #8435c2;
+  color: #3d1dca;
 }
 
 
@@ -132,8 +132,8 @@
   
   .card-container.dark-mode {
     background-color: transparent;
-    border: 2px solid #8435c2;
-    box-shadow: 0 0 20px rgba(132, 53, 194, 0.5); /* Adjust the values as needed */
+    border: 2px solid #3d1dca;
+    box-shadow: 0 0 20px rgba(61, 29, 202, 0.5);/* Adjust the values as needed */
   }
   
   

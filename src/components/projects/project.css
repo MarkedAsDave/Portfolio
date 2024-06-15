@@ -17,7 +17,7 @@
   color: black;
 }
 .text-h2.dark-mode {
-  color: #a04ddf;
+  color: #5631fd;
 }
 .skill-container {
   position: relative;
@@ -61,22 +61,22 @@
 }
 
 .view-btn.light-mode {
-  color: #8435c2;
+  color: #3d1dca;
   background-color: #d9d9d9;
 }
 
 .view-btn.light-mode:hover {
   color: white;
-  background-color: #8435c2;
+  background-color: #3d1dca;
 }
 .view-btn.dark-mode {
   color: white;
-  border: 2px solid #8435c2;
-  box-shadow: 0 0 20px rgba(132, 53, 194, 0.5);
+  border: 2px solid #3d1dca;
+  box-shadow: 0 0 20px rgba(61, 29, 202, 0.5);
 }
 
 .view-btn.dark-mode:hover {
-  color: #8435c2;
+  color: #3d1dca;
   border: 2px solid #d9d9d9;
 }
 
