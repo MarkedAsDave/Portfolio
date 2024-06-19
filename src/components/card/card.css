@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 13vw;
-  height: 25vh;
+  height: 24vh;
   padding: 10px;
   align-items: left;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 
 .photo {
-  margin-top: -3vh;
+  margin-top: -1vh;
   width: 13vw;
   height: 15vh;
 }

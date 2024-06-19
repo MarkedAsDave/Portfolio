@@ -15,37 +15,34 @@
 
 .text-h2.light-mode {
   color: black;
+  text-align: left;
 }
 .text-h2.dark-mode {
   color: #5631fd;
 }
-.skill-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 95vw;
-  gap: 1%;
-}
+
 
 .project-content {
   display: flex;
   flex-direction: column;
   position: inherit;
   margin-top: -10vh;
-  width: 40vw;
+  width: 95vw;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   overflow: unset;
-  gap: 4%;
+  gap: 5%;
+  margin-right: 10%;
+
 }
 
 .horizontal {
   display: flex;
   flex-direction: row;
-  gap: 5.5%;
+  gap: 6%;
 }
 
 .view-btn {

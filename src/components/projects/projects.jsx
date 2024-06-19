@@ -68,7 +68,7 @@ export default function Projects({ isDarkMode }) {
             <h3
               className={`text-h2 ${isDarkMode ? "dark-mode" : "light-mode"}`}
             >
-              UI UX DESIGN
+              
             </h3>
             <div className="horizontal">
               <Card
@@ -86,13 +86,11 @@ export default function Projects({ isDarkMode }) {
                 photo={hanap}
                 logo={Figma}
                 buttonLink={
-                  "https://www.figma.com/file/k8yDgQwo65TXYnee4j2K5K/Boarding-House?type=design&mode=design&t=DEdm50booBHHRB0C-1"
+                  "https: //www.figma.com/file/k8yDgQwo65TXYnee4j2K5K/Boarding-House?type=design&mode=design&t=DEdm50booBHHRB0C-1"
                 }
                 buttonText="View Design"
                 isDarkMode={isDarkMode} // Pass isDarkMode to Card component
               />
-            </div>
-            <div className="horizontal">
               <Card
                 title="Vehi-Sched Mobile"
                 photo={mobile}
@@ -103,6 +101,8 @@ export default function Projects({ isDarkMode }) {
                 buttonText="View Design"
                 isDarkMode={isDarkMode} // Pass isDarkMode to Card component
               />
+            </div>
+            <div className="horizontal">
               <Card
                 title="Vehi-Sched Web"
                 photo={vehisched}
@@ -113,85 +113,27 @@ export default function Projects({ isDarkMode }) {
                 buttonText="View Design"
                 isDarkMode={isDarkMode} // Pass isDarkMode to Card component
               />
-            </div>
-          </div>
-          <div className="project-content">
-            <h3
-              className={`text-h2 ${isDarkMode ? "dark-mode" : "light-mode"}`}
-            >
-              FRONTEND DEVELOPMENT
-            </h3>
-            <div className="horizontal">
-              <Card
-                title="Vehi-Scehd Web"
-                photo={vehisched}
-                logo={react}
-                buttonText="View Site"
-                buttonLink={"https://rakss17.github.io/vehisched-webapp/"}
-                isDarkMode={isDarkMode} // Pass isDarkMode to Card component
-              />
-            </div>
-            <div className="horizontal">
-              <Card
-                title="Vehi-Sched Mobile"
-                photo={mobile}
-                logo={react}
-                buttonText="Download App"
-                buttonLink={
-                  "https://github.com/rakss17/vehisched-mobileapp/releases/tag/v1.0.0?fbclid=IwAR3gX29YaCgpV9od0TNqAt_-23bNPsbbA9V64z8G4GnNwuCANGhKu3_2uz8"
-                }
-                isDarkMode={isDarkMode} // Pass isDarkMode to Card component
-              />
-            </div>
-          </div>
-          <div className="project-content">
-            <h3
-              className={`text-h2 ${isDarkMode ? "dark-mode" : "light-mode"}`}
-            >
-              GRAPHIC DESIGN
-            </h3>
-            <div className="horizontal">
-              <div
-                className={`view-btn ${
-                  isDarkMode ? "dark-mode" : "light-mode"
-                }`}
-                onClick={handleInvitation}
-              >
-                {" "}
-                <CardGiftcardIcon fontSize="large" />
-                <h4>Invitation Cards</h4>
+              <div className="horizontal">
+                <Card
+                  title="Vehi-Scehd Web"
+                  photo={vehisched}
+                  logo={react}
+                  buttonText="View Site"
+                  buttonLink={"https://rakss17.github.io/vehisched-webapp/"}
+                  isDarkMode={isDarkMode} // Pass isDarkMode to Card component
+                />
               </div>
-              <div
-                className={`view-btn ${
-                  isDarkMode ? "dark-mode" : "light-mode"
-                }`}
-                onClick={handleBanner}
-              >
-                {" "}
-                <ViewCarouselIcon fontSize="large" />
-                <h4>Banners</h4>
-              </div>
-            </div>
-            <div className="horizontal">
-              <div
-                className={`view-btn ${
-                  isDarkMode ? "dark-mode" : "light-mode"
-                }`}
-                onClick={handleSticker}
-              >
-                {" "}
-                <LabelImportantIcon fontSize="large" />
-                <h4>Stickers</h4>
-              </div>
-              <div
-                className={`view-btn ${
-                  isDarkMode ? "dark-mode" : "light-mode"
-                }`}
-                onClick={handleLogo}
-              >
-                {" "}
-                <ShapeLineIcon fontSize="large" />
-                <h4>Logo</h4>
+              <div className="horizontal">
+                <Card
+                  title="Vehi-Sched Mobile"
+                  photo={mobile}
+                  logo={react}
+                  buttonText="Download App"
+                  buttonLink={
+                    "https://github.com/rakss17/vehisched-mobileapp/releases/tag/v1.0.0?fbclid=IwAR3gX29YaCgpV9od0TNqAt_-23bNPsbbA9V64z8G4GnNwuCANGhKu3_2uz8"
+                  }
+                  isDarkMode={isDarkMode} // Pass isDarkMode to Card component
+                />
               </div>
             </div>
           </div>
@@ -200,7 +142,7 @@ export default function Projects({ isDarkMode }) {
       {showInvitation && <Invitation onClose={handleCloseInvitation} />}
       {showBanner && <Banner onClose={handleCloseBanner} />}
       {showSticker && <Sticker onClose={handleCloseSticker} />}
-      {showLogo && <Logo onClose={handleCloseLogo} />}  
+      {showLogo && <Logo onClose={handleCloseLogo} />}
     </>
   );
 }
